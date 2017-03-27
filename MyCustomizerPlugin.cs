@@ -60,6 +60,8 @@ namespace Turbo.Plugins.CB
 			Hud.GetPlugin<GameInfoPlugin>().ServerIpAddressDecorator.Enabled = true;
 			Hud.GetPlugin<GameInfoPlugin>().GameClockDecorator.TextFont = Hud.Render.CreateFont("Calibri", 9.5f, 200, 255, 234, 137, false, false, true);
 			Hud.GetPlugin<InventoryAndStashPlugin>().NotGoodDisplayEnabled = false;
+            Hud.TogglePlugin<TopExperienceStatistics>(false); //disable top central bar
+            
 			
 			// [v7.1] [ENGLISH] [Gigi] EliteBarPlugin CUSTOMIZATION http://turbohud.freeforums.net/post/32610/thread
 			Hud.GetPlugin<Gigi.EliteBarPlugin>().ShowRareMinions = false;
@@ -359,7 +361,7 @@ namespace Turbo.Plugins.CB
 			// Default PLUGIN CUSTOMIZATION: TopLeftBuffListPlugin
 			Hud.RunOnPlugin<TopLeftBuffListPlugin>(plugin => {
 				
-				plugin.PositionX = 0.30f; // Change this to adjust buffbar left or right 
+				plugin.PositionX = 0.35f; // Change this to adjust buffbar left or right 
 				plugin.PositionY = 0.01f; // Change this to adjust buffbar up or down
     
 
