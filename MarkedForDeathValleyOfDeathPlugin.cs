@@ -63,7 +63,7 @@ namespace Turbo.Plugins.CB
             var actors = Hud.Game.Actors;
             foreach (var actor in actors)
             {
-                switch (actor.SnoActor.Sno)
+                switch ((uint)actor.SnoActor.Sno)
                 { 
                    case 230674:
                         MarkedForDeathDecorator.Paint(layer, actor, actor.FloorCoordinate, null);
